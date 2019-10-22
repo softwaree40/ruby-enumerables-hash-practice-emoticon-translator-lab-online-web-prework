@@ -39,8 +39,9 @@ def get_english_meaning(file_path,emoticon)
     result_of_call
     result_of_call["get_meaning"][emoticon]
     if !result_of_call["get_meaning"].has_key?(emoticon)
+      binding.pry
        return "Sorry, that emoticon was not found"
     end
     
-    #binding.pry
+    
 end
