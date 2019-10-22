@@ -15,15 +15,17 @@ def load_library(file)
    end
    emoticons.each do |key,value|
      new['get_meaning'][value[1]] = key
-     new['get_emoticon'][value[0]] = key
+     new['get_emoticon'][value[0]] = value[1]
      
     # binding.pry 
    end
    return new
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file_path, emoticon)
+    result_new_hash = load_file(file_path)
+    result_new_hash
+     #binding.pry
 end
 
 def get_english_meaning
